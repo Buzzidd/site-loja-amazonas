@@ -1,75 +1,19 @@
-# React + TypeScript + Vite
+# 🏬 Amazonas Plast-Couro - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma landing page moderna e responsiva desenvolvida para a Amazonas Plast-Couro, loja tradicional de artigos para artesanato, tapeçaria e decoração localizada em Porto Velho - RO. O projeto atua como uma vitrine digital, focada em apresentar o catálogo da loja e facilitar o contato direto com os clientes.
 
-Currently, two official plugins are available:
+## 🚀 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Interface Responsiva:** Design adaptável para dispositivos móveis, tablets e desktops.
+- **Integração de Contato:** Botão flutuante e links estratégicos que redirecionam o usuário diretamente para o WhatsApp da loja com uma mensagem pré-configurada (API do WhatsApp).
+- **Apresentação de Categorias:** Exibição estruturada das principais frentes de produtos (Armarinho, Malharias, Tapeçaria, Decoração).
+- **Identidade Visual Customizada:** Estilização global padronizada para refletir as cores e a marca da loja física.
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A arquitetura do projeto foi construída visando alta performance e componentização, utilizando:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+- **[React](https://reactjs.org/)** com **[TypeScript](https://www.typescriptlang.org/)** para a construção da interface e tipagem estática.
+- **[Vite](https://vitejs.dev/)** como motor de build e servidor de desenvolvimento ultra-rápido.
+- **[Tailwind CSS (v4)](https://tailwindcss.com/)** para estilização utilitária e design responsivo.
+- **[Lucide React](https://lucide.dev/)** para a biblioteca de ícones leves e consistentes.
